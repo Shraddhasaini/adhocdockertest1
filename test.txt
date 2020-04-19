@@ -2,4 +2,13 @@ Ques 1:
 $docker pull alpine
 $docker run -itd alpine
 $docker commit 993a664d alpine:shraddha
-$docker run -it --name shraddhac1q1 alpine:shraddha date +"%H-%M-%S" >> question1.txt
+$docker run -it --name shraddhac1q1 alpine:shraddha date +"%H:%M:%S" >> question1.txt
+$cat question1.txt
+>>>12:19:53                                                                                                                                     
+
+
+Ques 2:
+$docker build -t adhoc:shraddhasaini https://github.com/redashu/summer2020dockertest.git
+$docker tag adhoc:shraddhasaini shraddha/adhoc:shraddhasaini
+$docker login
+$docker push shraddhasaini/adhocshraddhasaini

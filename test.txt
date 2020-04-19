@@ -15,4 +15,8 @@ $docker push shraddhasaini/adhocshraddhasaini
 
 
 Ques 3:
-docker run -d --name c3q3 -p 8080:80 dockerashu/ckad:v2
+$docker run -d --name shraddhac3q3 -p 6980:80 dockerashu/ckad:v2
+go in browser: http://52.204.127.145:6980/
+check q3.txt on github
+
+

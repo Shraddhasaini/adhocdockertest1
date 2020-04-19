@@ -1,1 +1,5 @@
-..
+Ques 1:
+$docker pull alpine
+$docker run -itd alpine
+$docker commit 993a664d alpine:shraddha
+$docker run -it --name shraddhac1q1 alpine:shraddha date +"%H-%M-%S" >> question1.txt

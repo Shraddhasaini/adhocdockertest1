@@ -15,9 +15,35 @@ $docker push shraddhasaini/adhoc:shraddhasaini
 link to dockerhub: https://hub.docker.com/repository/docker/shraddhasaini/adhoc
 
 
+
 Ques 3:
 $docker run -d --name shraddhac3q3 -p 6980:80 dockerashu/ckad:v2
 go in browser: http://52.204.127.145:6980/
 check q3.txt on github
 
 
+Ques 4:
+$mkdir shraddha
+$cd shraddha
+$git clone https://github.com/redashu/beginner-html-site-styled
+$mv beginner-html-site-styled webapp
+$touch Dockerfile
+$vim Dockerfile
+$cat Dockerfile
+>>>FROM centos                                                                                                                           
+MAINTAINER shraddhasaini99@gmail.com                                                                                                     
+RUN yum install httpd -y                                                                                                                
+COPY webapp /var/www/html/ 
+EXPOSE 80                                                                                                     
+ENTRYPOINT httpd -DFOREGROUND  
+$docker build -t shraddha:q4 .
+$docker run -d --name shraddhac4q4 -p 6981:80 shraddha:q4
+
+
+
+Ques 5:
+$docker volume create shraddhaq5
+$docker pull alpine
+$docker run -it --name shraddhaaac5q5 -v shraddhaq5:/adhocvol -v /etc/passwd:/user.txt alpine sh
+>># wc -l user.txt > /adhocvol/usercount.txt
+line count : 28

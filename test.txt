@@ -12,3 +12,7 @@ $docker build -t adhoc:shraddhasaini https://github.com/redashu/summer2020docker
 $docker tag adhoc:shraddhasaini shraddha/adhoc:shraddhasaini
 $docker login
 $docker push shraddhasaini/adhocshraddhasaini
+
+
+Ques 3:
+docker run -d --name c3q3 -p 8080:80 dockerashu/ckad:v2

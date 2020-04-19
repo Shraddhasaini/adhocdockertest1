@@ -9,9 +9,10 @@ $cat question1.txt
 
 Ques 2:
 $docker build -t adhoc:shraddhasaini https://github.com/redashu/summer2020dockertest.git
-$docker tag adhoc:shraddhasaini shraddha/adhoc:shraddhasaini
+$docker tag adhoc:shraddhasaini shraddhasaini/adhoc:shraddhasaini
 $docker login
-$docker push shraddhasaini/adhocshraddhasaini
+$docker push shraddhasaini/adhoc:shraddhasaini
+link to dockerhub: https://hub.docker.com/repository/docker/shraddhasaini/adhoc
 
 
 Ques 3:
